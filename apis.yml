@@ -1,7 +1,28 @@
 aid: physiohome
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/physiohome.png
 name: Physiohome
-description: Physiohome is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Physiohome, operating as Ameen (رعاية أمين), is a Saudi Arabia-based, tech-enabled
+  provider of home rehabilitation and physical therapy services. Founded in 2021 out of
+  a Ministry of Health sector accelerator, the company delivers physiotherapy, occupational
+  therapy, speech therapy, nutritional therapy, and personal training for adults and seniors
+  in patients' homes and rehabilitation centers. Its platform manages the full care journey
+  from assessment and treatment planning through session tracking, provider equipping, and
+  reporting, with 100+ active service providers operating across nine cities and a wider
+  network of 700+ providers. Ameen offers iOS and Android apps, an online booking flow, and
+  a patient portal, but publishes no public developer API, documentation, or developer portal.
+  It is a portfolio company of Sanabil 500 (500 Global) and Saudi Venture Capital.
 url: https://raw.githubusercontent.com/api-evangelist/physiohome/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Healthcare
+- Physical Therapy
+- Rehabilitation
+- Home Health
+- Telehealth
+- Saudi Arabia
+- Consumer Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/physiohome-domain-security.yml
 - type: Website
   url: https://ameen.care
+- type: Blog
+  url: https://main.ameen.care/blogs
+- type: Pricing
+  url: https://main.ameen.care/#packages
+- type: SignUp
+  url: https://booking.ameen.care/enquire
+- type: Support
+  url: https://main.ameen.care/contact-us
+- type: PrivacyPolicy
+  url: https://main.ameen.care/privacy
+- type: TermsOfService
+  url: https://main.ameen.care/terms-conditions
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
